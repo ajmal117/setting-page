@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Forescribe from "./icons";
-import {
+// import { ReactComponent as Rewards } from '../../assets/svg/dashboard/rewards.svg';
+import { 
   Insight,
   Application,
   Renewal,
@@ -9,6 +10,7 @@ import {
   Account,
   Webx,
   Downdrop,
+  Inter
 } from "./icons";
 
 export default function Sidebar() {
@@ -21,7 +23,7 @@ export default function Sidebar() {
               "flex justify-center py-4   h-[71px] w-72  border border-b-0"
             }
           />
-          <div className="h-[85vh] w-72 flex flex-col justify-between border border-b-0">
+          <div className="h-screen w-72 flex flex-col justify-between border border-b-0">
             <div className="  gap-4 pt-10  flex flex-col  items-center ">
               <div className=" flex gap-2 rounded-md active:bg-violet-50 hover:bg-violet-50  hover:border-l-4 hover:border-[#8B3DFF] px-5 py-3 h-12   w-64">
                 <Insight className={""} />
@@ -56,6 +58,10 @@ export default function Sidebar() {
                 <p className=" ps-2 font-normal text-xs text-slate-500">
                   SETTINGS
                 </p>
+              </div>
+              <div className="flex gap-2 rounded-md hover:bg-violet-50  hover:border-l-4 hover:border-[#8B3DFF] px-5 py-3 h-12   w-64">
+                <Inter className={""} />
+                <p className="font-normal text-base text-[#19154E]">Integrations</p>
               </div>
               <div className="flex gap-2 rounded-md hover:bg-violet-50  hover:border-l-4 hover:border-[#8B3DFF] px-5 py-3 h-12   w-64">
                 <Account className={""} />
